@@ -20,7 +20,7 @@ class Chromadb:
         self.dbname = "rag-assistant"
         self.db_metadata = {"hnsw:space": "cosine"}  # 相似度为余弦相似度计算规则
         self.embedding_model_beg_m3 = bgem3_embedding
-
+        # self.get_or_create_collect(self.dbname)
         self.vector_store = Chroma(
             collection_name=self.dbname,
             embedding_function=self.embedding_model_beg_m3.get_embedding_fun(),
@@ -87,8 +87,12 @@ if __name__ == "__main__":
     ids = chromadb_client.add_doc(documents)
 
     # 查询
-    query = '索引技术有哪些？'
+    query = 'GraphRAG 本质是什么'
     print(chromadb_client.query(query, 2))
+
+
+
+
 
 # # 混合检索支持的操作
 # """

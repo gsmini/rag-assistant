@@ -13,5 +13,5 @@ device = env.str('device', "cpu")
 
 if __name__ == "__main__":
     print(BASE_DIR+"/third_party/embeddings_models/bge-m3/")
-    print(chromadb_host)
-    print(chromadb_port)
+    print(llm_base_url)
+    print(llm_api_key)
