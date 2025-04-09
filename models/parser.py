@@ -72,7 +72,7 @@ def parse_pdf(filename, binary=None, from_page=0, to_page=100000,
     if callback is None:
         callback = logger
     doc = {
-        "docnm_kwd": filename
+        "docnm_kwd": filename # 文件名
     }
     doc["title_tks"] = rag_tokenizer.tokenize(re.sub(r"\.[a-zA-Z]+$", "", doc["docnm_kwd"]))
     doc["title_sm_tks"] = rag_tokenizer.fine_grained_tokenize(doc["title_tks"])
