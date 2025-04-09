@@ -1,5 +1,4 @@
 from config import device, BASE_DIR
-# from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain_huggingface import HuggingFaceEmbeddings
 
 """

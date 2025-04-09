@@ -62,7 +62,7 @@ if __name__ == "__main__":
     # 案例2 rag+大模型
     """
     """
-    from chroma import chromadb_client
+    from chroma_cli import chromadb_client
 
     query = 'GraphRAG 本质是什么？'
     related_docs = chromadb_client.query(query, 2)
