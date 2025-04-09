@@ -10,9 +10,6 @@ def handler_query_v1(querys=None, top_k=2):
       "{context}"
       回答：
       '''
-    if querys == None:
-        querys = []
-
     if not querys:
         return "您有什么问题请直说"
     for query in querys:
@@ -22,5 +19,5 @@ def handler_query_v1(querys=None, top_k=2):
         print(f"response: ", response)
 
 
-if  __name__ == "__main__":
-    print(handler_query_v1(["GraphRAG是什么?"]),2)
+if __name__ == "__main__":
+    print(handler_query_v1(["GraphRAG是什么?"]), 2)
