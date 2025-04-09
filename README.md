@@ -8,6 +8,7 @@ docker run -d --name chromadb -p 8000:8000 \
  chromadb/chroma:0.6.3
 ```
 > https://cookbook.chromadb.dev/running/running-chroma/#docker
+> pip install chromadb==0.6.3 客户端版本和docker启动的版本要对齐 不然无法执行相关业务
 
 
 # python3.10.5
@@ -24,10 +25,11 @@ git clone  https://github.com/infiniflow/ragflow.git
 rm -rf .git
 
 ```
+>  这里我已经下载了  可自行根据最新版本下载，然后修改import的路径
 # embedding 模型下载
 ```shell
 
-cd  third_patry
+cd  third_patry/embeddings_models
 git clone https://www.modelscope.cn/BAAI/bge-m3.git
 ```
 ## 本地依赖安装
